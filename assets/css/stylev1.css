@@ -1,0 +1,406 @@
+body{
+	padding:0px;
+	margin:0px;
+}
+
+/* >>>>>>>>>>>>>>> :: start back to top :: <<<<<<<<<<<<<<<*/
+#button-back-top {
+    display: inline-block;
+    background-image: linear-gradient(to left,#e594dc,#6864ec);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#button-back-top::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 47px;
+    color: #fff;
+}
+
+#button-back-top.show {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+
+/* Styles for the content section */
+
+.content {
+    width: 77%;
+    margin: 50px auto;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    color: #6c767a;
+    line-height: 1.9;
+}
+@media (min-width: 500px) {
+.content {
+    width: 43%;
+    }
+    #button-back-top {
+    margin: 30px;
+    }
+}
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+.content h3 {
+  font-style: italic;
+  color: #96a2a7;
+}
+/* >>>>>>>>>>>>>>> :: ends back to top :: <<<<<<<<<<<<<<<*/
+.slider-bg{
+	background:#f6f7f8 url(../images/slider-bg-v1.png);
+	background-position: right;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+/* >>>>>>>>>>>>>>> :: start navbar :: <<<<<<<<<<<<<<< */
+.menu-v1 ul li a{
+	color: #7992b1 !important;
+}
+.menu-v1 ul li {
+    list-style: none;
+    padding: 0 12px;
+}
+.menu-v1 ul li a:hover:after{
+	width: 100%;
+	background-image: linear-gradient(to right, #565def, #9066e9, #b572e3, #d082de, #e594dc);
+}
+.nav-btn-v1 {
+    background: #fff;
+    color:#7992b1 !important;
+    border: 0px;
+    padding:10px 19px 8px;
+    border-radius:2px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    font-family: 'montserratsemibold';
+    display: block;
+}
+.nav-btn-v1:hover{
+	color: #d192ea !important;
+}
+/* >>>>>>>>>>>>>>> :: end navbar :: <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>> :: start slider :: <<<<<<<<<<<<<<< */
+.sliderv1-text{
+	width: 60%;
+	position: relative;
+	left: 0;
+	float: left;
+	top: 142px;
+}
+.sliderv1-text h4 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-family: 'montserratregular';
+    font-size: 27px;
+    background: linear-gradient(to left,#e594dc,#6864ec);
+    color: rgb(255,255,255,.1);
+    -webkit-background-clip: text !important;
+    animation-delay: 0.50s;
+}
+.sliderv1-text h1 {
+    text-transform: uppercase;
+    margin: 0px;
+    font-family: 'poppinssemibold';
+    font-size: 47px;
+    background: linear-gradient(to left,#e594dc,#6864ec);
+    color: rgb(255,255,255,.1);
+    -webkit-background-clip: text !important;
+    animation-delay: 0.75s;
+}
+a.carousel-control-prev {
+    width: 51px;
+    height: 51px;
+    top: 200px;
+    border: 1px #cebdf3 solid;
+    border-radius: 50%;
+    left: 24px;
+    color: #000;
+}
+a.carousel-control-next {
+   	width: 51px;
+    height: 51px;
+    top: 200px;
+    border:1px #dcd9e2 solid;
+    border-radius: 50%;
+    right: 24px;
+}
+.slider-right-picks{
+	width: 40%;
+	float: right;
+}
+.slider-right-picks img{;
+	float: right;
+	width: 100%;
+}
+a.slider-text-apple-btnv1{
+   	background: transparent;
+    background-image: linear-gradient(to right, #6864ec 26%, #e594dc 70%);
+    padding: 11px 19px;
+     border-left: 1px solid #6e6df7;
+    border-right: 1px solid #c08dec;
+    border-top:1px solid #957ef2;
+    border-bottom: 1px solid #8b81f3;
+    border-radius: 3px;
+    background:linear-gradient(to left,#6864ec,#e594dc);
+    color: rgb(255,255,255,.1);
+    -webkit-background-clip: text !important;
+    text-transform: uppercase;
+    font-size:14px;
+    margin-top: 38px;
+    cursor: pointer;
+    font-family: 'montserratregular';
+    animation-delay: 1s;
+    display: inline-block;
+}
+a.slider-text-apple-btnv1 i{
+	margin-right: 10px;
+    font-size: 23px;
+    background: linear-gradient(to left,#6864ec,#e594dc);
+    color: rgb(255,255,255,.1);
+    -webkit-background-clip: text !important;
+}
+a.slider-text-apple-btnv1:hover {
+	color: #fff !important;
+	margin:0px;
+    transition: 0.50s;
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.2);
+    border:0px;
+    background: linear-gradient(to left,#6864ec,#e594dc);
+    background-clip: padding-box !important;
+    border-left: 1px solid #6e6df7;
+    border-right: 1px solid #c08dec;
+    border-top:1px solid #957ef2;
+    border-bottom: 1px solid #8b81f3;
+    border: 1px transparent solid !important;
+}
+a.slider-text-apple-btnv1.active{
+    color: #fff !important;
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to left,#6864ec,#e594dc);
+    background-clip: padding-box !important;
+    border: 1px transparent solid !important;
+}
+a.slider-text-apple-btnv1:hover > i{
+	color: #fff;
+}
+a.slider-text-apple-btnv1.active > i{
+    color: #fff;
+}
+a.slider-text-apple-btnv1:focus{
+    outline: none;
+}
+a.slider-text-apple-btnv1:last-child{
+    margin-right: 44px;
+}
+/* >>>>>>>>>>>>>>> :: end slider :: <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>> :: start about :: <<<<<<<<<<<<<<< */
+.about-box-v1:hover > h3{
+	background: linear-gradient(to left,#6864ec,#e594dc);
+    color: rgb(255,255,255,.1);
+    -webkit-background-clip: text !important;
+}
+/* >>>>>>>>>>>>>>> :: end about :: <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>> :: start features sec:: <<<<<<<<<<<<<<< */
+.icon-bg{
+	background: linear-gradient(to left,#e594dc,#6864ec);
+}
+.features-icon-bg:hover > h3{
+	background: linear-gradient(to left,#e594dc,#6864ec);
+    color: rgb(255,255,255,.1);
+    -webkit-background-clip: text !important;
+}
+/* >>>>>>>>>>>>>>> :: ends features sec:: <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>> :: start price sec :: <<<<<<<<<<<<<<< */
+.price-box:hover a.price-btn-v1{
+		background: linear-gradient(to left,#e594dc,#6864ec);
+        border: 0px solid transparent;
+}
+/* >>>>>>>>>>>>>>> :: ends price sec :: <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>> :: start clients sec :: <<<<<<<<<<<<<<< */
+.clients-bg-v1{
+	background: linear-gradient(to left,#e594dc,#6864ec);
+}
+/* >>>>>>>>>>>>>>> :: ends clients sec :: <<<<<<<<<<<<<<< */
+
+.blog .carousel-v1-indicators .active {
+background: linear-gradient(to left,#e594dc,#6864ec);
+}
+/* >>>>>>>>>>>>>>> :: start contact sec :: <<<<<<<<<<<<<<< */
+.contact-btn-v1{
+	background:linear-gradient(to right,#6864ED 2%, #e594dc 41%);
+}
+.contact-v1 span{
+	color: #e89be0;
+    animation-delay: 0.75s;
+}
+/* >>>>>>>>>>>>>>> :: ends contact sec :: <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>> :: start footer sec :: <<<<<<<<<<<<<<< */
+.footer-btm{
+	background: linear-gradient(to left,#e594dc,#6864ec);
+}
+/* >>>>>>>>>>>>>>> :: end footer sec :: <<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>> :: responsive start:: <<<<<<<<<<<<<<< */
+@media(max-width: 1199px){
+ .sliderv1-text h1{
+        font-size: 31px;
+    }
+    .sliderv1-text {
+    left: 27px;
+    }
+    .slider-bg {
+    background-size:358px 100% !important;
+    }
+
+}
+@media (max-width: 991px){
+    .slider-bg {
+    background-size: 300px 100% !important;
+}
+     .sliderv1-text h4 {
+    margin-bottom: 22px;
+    font-size: 18px;
+    }
+    .menu ul {
+    margin-top: 38px;
+    background-color: #ece8fd;
+    }
+    .sliderv1-text h1 {
+    font-size: 28px;
+    }
+    .sliderv1-text {
+    top:96px;
+    left: 39px;
+    }
+   a.slider-text-apple-btnv1{
+        margin-top: 28px;
+    }
+    
+    a.slider-text-apple-btnv1 {
+    font-size: 12px;
+    }
+    
+    a.slider-text-apple-btnv1 i {
+    font-size: 20px;
+    }
+    .menu-v1 ul li {
+    padding: 0 8px;
+}
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.nav-btn-v1 {
+    position: relative;
+}
+    }
+    @media (max-width:767px){
+    .sliderv1-text h4 {
+    color: #d092ea;
+    }
+    .sliderv1-text h1 {
+    color:#d092ea ;
+    }
+    a.slider-text-apple-btnv1:last-child {
+    margin-right:1px !important;
+    color: #d092ea;
+    border-color:#d092ea;
+    }
+    .sliderv1-text {
+    top: 30px;
+    left: 0px;
+    }
+    .slider-bg {
+    background-size: 312px 100% !important;
+    height: 400px;
+    }
+    .pd-none {
+    padding: 0 15px !important;
+    text-align: left
+    }
+    a.slider-text-apple-btnv1 {
+    border-color: #fff;
+    color: #fff;
+    }
+}
+@media (max-width: 575px){
+    .sliderv1-text {
+    width: 100%;
+    }
+   .sliderv1-text h4 {
+    margin-bottom: 22px;
+    font-size: 18px;
+    color: #d092ea;
+    text-align: center;
+    }
+    .sliderv1-text h1 {
+    font-size: 24px;
+    color:#d092ea;
+    text-align: center;
+    }
+    .pd-none {
+    text-align: center;
+    padding: 0 15px !important;
+    }
+    a.slider-text-apple-btnv1 {
+    border-color: #fff;
+    color: #fff;
+    }
+    a.slider-text-apple-btnv1 i{
+    color: #fff;
+    }
+    .slider-bg {
+    background-size: 301px 100% !important;
+    height: 100%;
+    }
+    a.slider-text-apple-btnv1:last-child {
+    margin-right:7px !important;
+    color: #fff;
+    border-color: #fff;
+    padding: 11px 10px;
+    }
+    a.slider-text-apple-btnv1 i:last-child {
+    color: #fff;
+    }
+    a.slider-text-apple-btnv1.active{
+    color: #fff;
+    }
+}
+
+@media (max-width: 1366px) {
+.slider-bg{
+    background-size: 443px 100%;
+}
+}
+@media (max-width: 480px){
+    .slider-bg {
+    background-size: 282px 100%;
+    }
+    .h-40 {
+    height: 400px;
+    }
+}
+
+/* >>>>>>>>>>>>>>> :: responsive ends:: <<<<<<<<<<<<<<< */

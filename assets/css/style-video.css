@@ -1,0 +1,160 @@
+body{
+	padding:0px;
+	margin:0px;
+}
+video{
+    width: 100%;
+    position: absolute;
+    height: auto;
+}
+.video-header{
+	height: 700px;
+}
+#home{
+	position: relative;
+	overflow: hidden;
+}
+.video-text {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top:39%;
+    margin: auto;
+    text-align: center;
+}
+.video-text h2{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 48px;
+	font-family: 'poppinssemibold';
+}
+.header-video-overlay{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	opacity:0.9;
+	height:100%;
+	background-image: linear-gradient(to left,#289bfd 30%,#53d8f9 80%); 
+}
+.top-video-overlay{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	opacity:0.9;
+	height:100%;
+    background:linear-gradient(-29deg,rgb(255, 109, 114) 0,rgb(251, 165, 100) 100%);
+	/*background: linear-gradient(to right top, #ef7782, #f77e76, #fc8769, #fd925c, #fb9e50);*/
+}
+.top-video-overlayv2{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	opacity:0.9;
+	height:100%;
+	background:linear-gradient(to left,#e594dc,#6864ec);
+}
+
+a.slider-text-apple-btnv1.clr-change.wow.fadeInDown.animated {
+    border-color: #fff;
+    color: #fff;
+}
+a.slider-text-apple-btnv1.clr-change i{
+    border-color: #fff;
+    color: #fff;
+}
+@media (max-width:1199px){
+	.pd-none{
+	text-align: center;
+	}
+	video {
+    width: auto;
+    height: 700px;
+	}
+}
+@media (max-width:991px){
+	.madbrian-myapp-about-box{
+		text-align: center;
+	}
+	.mt-top {
+    margin-top: 23px;
+	}
+	video{
+	height: 500px;
+	width: auto;
+	}
+	.video-header{
+		height: 500px;
+	}
+	.video-text {
+    top: 25%;
+	}
+	a.slider-apple-btn:last-child {
+    margin-right: 7px;
+	}
+	a.slider-text-apple-btn:last-child {
+    margin-right: 11px;
+	}
+
+}
+@media (max-width:767px){
+	.mt-top {
+    margin-top: 30px;
+	}
+	.video-header{
+		height: 400px;
+	}
+	.video-text {
+    top: 27%;
+	}
+	video{
+	height: 400px;
+	width: auto;
+	}
+	.video-text h2 {
+    font-size: 34px;
+	}
+
+
+}
+@media (max-width:575px){
+	.video-text {
+    top: 36%;
+	}
+	.video-text h2 {
+    font-size: 30px;
+	}
+
+}
+@media (max-width:480px){
+	.video-text {
+	    top: 34% !important;
+	}
+	a.slider-text-apple-btnv1 {
+	    padding: 11px 9px;
+	}
+	a.slider-text-apple-btn {
+	    padding: 10px 10px;
+	}
+	.video-text h2 {
+    font-size: 20px;
+	}
+	.mt-top {
+    margin-top: 25px;
+	}	
+}
+@media (max-width:322px){
+	.video-text {
+    top: 34% !important;
+	}
+}
+@media (max-width:732px){
+	.video-text {
+    top: 30%;
+	}
+}
+@media (min-width: 439px) and (max-width: 668px){
+	.video-text {
+	    top: 30%;
+	}
+
+}

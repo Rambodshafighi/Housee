@@ -1,0 +1,121 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.h-700 {
+    height: 700px;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-bottom: 35px;
+}
+
+.particle-header {
+    width: 100%
+}
+
+.particle-text {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 42%;
+    margin: auto;
+    text-align: center;
+}
+
+.particle-text h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 48px;
+    font-family: 'poppinssemibold';
+    margin-top: 0px;
+}
+
+h2.text-blue {
+    background: linear-gradient(to left, #e594dc, #6864ec);
+    color: rgb(255, 255, 255, .1);
+    -webkit-background-clip: text !important;
+    margin-top: 0px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-test-moniel-bg {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width:1366px) {
+    .particle-text {
+        top: 42%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .pd-none {
+        text-align: center;
+    }
+    .particle-text {
+        top: 40%;
+    }
+}
+
+@media (max-width:991px) {
+    .particle-text h2 {
+        font-size: 30px;
+    }
+    .particle-text {
+        top: 30%;
+    }
+    .carousel-3d-controls {
+        top: 34% !important;
+    }
+    .h-700 {
+        height: 400px !important;
+    }
+    .m-top {
+        margin-top: 4%;
+    }
+}
+
+@media (max-width:767px) {
+    .particle-text h2 {
+        font-size: 24px;
+    }
+    .particle-text {
+        top: 33%;
+    }
+    .m-top {
+        top: 30%;
+    }
+}
+
+@media (max-width:480px) {
+    .particle-text {
+        top: 30% !important;
+    }
+    .m-top {
+        top: 35% !important;
+    }
+}
+
+@media (max-width:360px) {
+    .particle-text {
+        top: 33% !important;
+    }
+}
+
+@media (max-width:322px) {
+    .particle-text {
+        top: 30% !important;
+    }
+    h2.text-blue {
+        color: #fff;
+    }
+}
